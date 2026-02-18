@@ -1,0 +1,597 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Agendas Dashboard - Liberty Ledger</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        header {
+            background: #1a1a1a;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            margin: 0 0 10px 0;
+        }
+        .subtitle {
+            color: #aaa;
+            font-size: 14px;
+        }
+        .city-section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .city-header {
+            border-bottom: 3px solid #1a1a1a;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .city-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1a1a1a;
+        }
+        .agenda-count {
+            color: #666;
+            font-size: 14px;
+        }
+        .agenda-item {
+            padding: 12px;
+            border-left: 3px solid #4CAF50;
+            margin-bottom: 10px;
+            background: #f9f9f9;
+        }
+        .agenda-text {
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .agenda-url {
+            font-size: 12px;
+            color: #666;
+            word-break: break-all;
+        }
+        .agenda-url a {
+            color: #2196F3;
+            text-decoration: none;
+        }
+        .agenda-url a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+        .no-agendas {
+            color: #999;
+            font-style: italic;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🗂️ Government Agendas Dashboard</h1>
+        <div class="subtitle">Liberty Ledger Media - Monitoring 3 jurisdictions</div>
+        <div class="subtitle">Last updated: February 18, 2026 at 03:24 PM</div>
+    </header>
+    
+    <main>
+
+        <div class="city-section">
+            <div class="city-header">
+                <div class="city-name">Bowie County, TX</div>
+                <div class="agenda-count">19 agenda items monitored</div>
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Commissioners</div>
+
+                <div class="agenda-url"><a href="/page/bowie.Commissioners.Court" target="_blank">Relative URL: /page/bowie.Commissioners.Court</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Commissioners' Court Page</div>
+
+                <div class="agenda-url"><a href="/page/bowie.CommissionersCourtPage" target="_blank">Relative URL: /page/bowie.CommissionersCourtPage</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Commissioners Court Minutes</div>
+
+                <div class="agenda-url"><a href="/page/bowie.CommissionersCourtMinutes" target="_blank">Relative URL: /page/bowie.CommissionersCourtMinutes</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Commissioners Court Minutes 2012</div>
+
+                <div class="agenda-url"><a href="/page/bowie.CommissionersCourtMinutes2012" target="_blank">Relative URL: /page/bowie.CommissionersCourtMinutes2012</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Commissioners Court Minutes 2013</div>
+
+                <div class="agenda-url"><a href="/page/bowie.CommissionersCourtMinutes2013" target="_blank">Relative URL: /page/bowie.CommissionersCourtMinutes2013</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Commissioners Court Minutes 2014</div>
+
+                <div class="agenda-url"><a href="/page/bowie.CommissionersCourtMinutes2014" target="_blank">Relative URL: /page/bowie.CommissionersCourtMinutes2014</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Commissioners Court Minutes 2015</div>
+
+                <div class="agenda-url"><a href="/page/bowie.CommissionersCourtMinutes2015" target="_blank">Relative URL: /page/bowie.CommissionersCourtMinutes2015</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Commissioner's Court Minutes 2016</div>
+
+                <div class="agenda-url"><a href="/page/bowie.COMMISSIONERSCOURTMINUTES2016" target="_blank">Relative URL: /page/bowie.COMMISSIONERSCOURTMINUTES2016</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Commissioner's Court Minutes 2017</div>
+
+                <div class="agenda-url"><a href="/page/bowie.COMMISSIONERSCOURTMINUTES2017" target="_blank">Relative URL: /page/bowie.COMMISSIONERSCOURTMINUTES2017</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">County Court at Law</div>
+
+                <div class="agenda-url"><a href="/page/bowie.County.Court" target="_blank">Relative URL: /page/bowie.County.Court</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">District Court</div>
+
+                <div class="agenda-url"><a href="#" target="_blank">Relative URL: #</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Court Registry</div>
+
+                <div class="agenda-url"><a href="/page/bowie.CourtRegistry" target="_blank">Relative URL: /page/bowie.CourtRegistry</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">District Court Judge</div>
+
+                <div class="agenda-url"><a href="#" target="_blank">Relative URL: #</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">5th District Court</div>
+
+                <div class="agenda-url"><a href="/page/bowie.5thDistrictCourt" target="_blank">Relative URL: /page/bowie.5thDistrictCourt</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">102nd District Court</div>
+
+                <div class="agenda-url"><a href="/page/bowie.102ndDistrictCourt" target="_blank">Relative URL: /page/bowie.102ndDistrictCourt</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">202nd District Court</div>
+
+                <div class="agenda-url"><a href="/page/bowie.202ndDistrictCourt" target="_blank">Relative URL: /page/bowie.202ndDistrictCourt</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Commissioners Court Meetings</div>
+
+                <div class="agenda-url"><a href="/page/bowie.CommissionersCourtPage" target="_blank">Relative URL: /page/bowie.CommissionersCourtPage</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">AGENDA</div>
+
+                <div class="agenda-url"><a href="/upload/page/2630/2-23-26 agenda.pdf" target="_blank">Relative URL: /upload/page/2630/2-23-26 agenda.pdf</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">ARCHIVED MINUTES</div>
+
+                <div class="agenda-url"><a href="/page/bowie.CommissionersCourtMinutes" target="_blank">Relative URL: /page/bowie.CommissionersCourtMinutes</a></div>
+
+            </div>
+
+        </div>
+
+        <div class="city-section">
+            <div class="city-header">
+                <div class="city-name">Texarkana, AR</div>
+                <div class="agenda-count">16 agenda items monitored</div>
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Board of Directors</div>
+
+                <div class="agenda-url"><a href="government/board_of_directors/index.php" target="_blank">Relative URL: government/board_of_directors/index.php</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Agendas & Minutes</div>
+
+                <div class="agenda-url"><a href="https://meetings.municode.com/MeetingsPage/index?clientCode=TEXARKAR" target="_blank">https://meetings.municode.com/MeetingsPage/index?clientCode=TEXARKAR</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Meetings Stream</div>
+
+                <div class="agenda-url"><a href="https://www.youtube.com/channel/UC2zU02o8zTodtzQ8IuiWL2Q" target="_blank">https://www.youtube.com/channel/UC2zU02o8zTodtzQ8IuiWL2Q</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Boards & Commissions</div>
+
+                <div class="agenda-url"><a href="government/boards_commissions/index.php" target="_blank">Relative URL: government/boards_commissions/index.php</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Board of Adjustment</div>
+
+                <div class="agenda-url"><a href="Documents/Government/Board and Commissions/Boards and Commission List Updated 8-12-25/Screenshot_12-8-2025_15856_.jpeg" target="_blank">Relative URL: Documents/Government/Board and Commissions/Boards and Commission List Updated 8-12-25/Screenshot_12-8-2025_15856_.jpeg</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Equalization Board</div>
+
+                <div class="agenda-url"><a href="Documents/Government/Board and Commissions/equalization.pdf" target="_blank">Relative URL: Documents/Government/Board and Commissions/equalization.pdf</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Library Board</div>
+
+                <div class="agenda-url"><a href="Documents/Government/Board and Commissions/Boards and Commission List Updated 8-12-25/2026_Library Board.pdf" target="_blank">Relative URL: Documents/Government/Board and Commissions/Boards and Commission List Updated 8-12-25/2026_Library Board.pdf</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Public Facilities Board</div>
+
+                <div class="agenda-url"><a href="Documents/Government/Board and Commissions/Boards and Commission List Updated 8-12-25/Screenshot_12-8-2025_15113_.jpeg" target="_blank">Relative URL: Documents/Government/Board and Commissions/Boards and Commission List Updated 8-12-25/Screenshot_12-8-2025_15113_.jpeg</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Agendas & Minutes</div>
+
+                <div class="agenda-url"><a href="https://meetings.municode.com/MeetingsPage/index?clientCode=TEXARKAR" target="_blank">https://meetings.municode.com/MeetingsPage/index?clientCode=TEXARKAR</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Agendas & Minutes</div>
+
+                <div class="agenda-url"><a href="https://meetings.municode.com/MeetingsPage/index?clientCode=TEXARKAR" target="_blank">https://meetings.municode.com/MeetingsPage/index?clientCode=TEXARKAR</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Find Meeting Agenda</div>
+
+                <div class="agenda-url"><a href="https://meetings.municode.com/PublishPage/index?cid=TEXARKAR&ppid=ad267efe-9860-49e1-a34a-f3b954f30af7&p=-1" target="_blank">https://meetings.municode.com/PublishPage/index?cid=TEXARKAR&ppid=ad267efe-9860-49e1-a34a-f3b954f30af7&p=-1</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Watch City Board Meeting Online</div>
+
+                <div class="agenda-url"><a href="https://www.youtube.com/channel/UC2zU02o8zTodtzQ8IuiWL2Q" target="_blank">https://www.youtube.com/channel/UC2zU02o8zTodtzQ8IuiWL2Q</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Agendas & MinutesRead More</div>
+
+                <div class="agenda-url"><a href="https://meetings.municode.com/MeetingsPage/index?clientCode=TEXARKAR" target="_blank">https://meetings.municode.com/MeetingsPage/index?clientCode=TEXARKAR</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Meetings StreamRead More</div>
+
+                <div class="agenda-url"><a href="https://www.youtube.com/channel/UC2zU02o8zTodtzQ8IuiWL2Q" target="_blank">https://www.youtube.com/channel/UC2zU02o8zTodtzQ8IuiWL2Q</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Agendas & Minutes</div>
+
+                <div class="agenda-url"><a href="https://meetings.municode.com/MeetingsPage/index?clientCode=TEXARKAR" target="_blank">https://meetings.municode.com/MeetingsPage/index?clientCode=TEXARKAR</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Meetings Stream</div>
+
+                <div class="agenda-url"><a href="https://www.youtube.com/channel/UC2zU02o8zTodtzQ8IuiWL2Q" target="_blank">https://www.youtube.com/channel/UC2zU02o8zTodtzQ8IuiWL2Q</a></div>
+
+            </div>
+
+        </div>
+
+        <div class="city-section">
+            <div class="city-header">
+                <div class="city-name">Texarkana, TX</div>
+                <div class="agenda-count">32 agenda items monitored</div>
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Building and Standards Meeting Documents</div>
+
+                <div class="agenda-url"><a href="/AgendaCenter/ViewFile/Agenda/_11022010-84?html=true" target="_blank">Relative URL: /AgendaCenter/ViewFile/Agenda/_11022010-84?html=true</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Building and Standards Meeting Documents</div>
+
+                <div class="agenda-url"><a href="/AgendaCenter/ViewFile/Agenda/_10262010-83?html=true" target="_blank">Relative URL: /AgendaCenter/ViewFile/Agenda/_10262010-83?html=true</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Building and Standards Meeting Documents</div>
+
+                <div class="agenda-url"><a href="/AgendaCenter/ViewFile/Agenda/_08102010-82?html=true" target="_blank">Relative URL: /AgendaCenter/ViewFile/Agenda/_08102010-82?html=true</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Building and Standards Meeting Documents</div>
+
+                <div class="agenda-url"><a href="/AgendaCenter/ViewFile/Agenda/_05252010-81?html=true" target="_blank">Relative URL: /AgendaCenter/ViewFile/Agenda/_05252010-81?html=true</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Building and Standards Meeting Documents</div>
+
+                <div class="agenda-url"><a href="/AgendaCenter/ViewFile/Agenda/_03292010-80?html=true" target="_blank">Relative URL: /AgendaCenter/ViewFile/Agenda/_03292010-80?html=true</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Building and Standards Meeting Documents</div>
+
+                <div class="agenda-url"><a href="/AgendaCenter/ViewFile/Agenda/_03152010-79?html=true" target="_blank">Relative URL: /AgendaCenter/ViewFile/Agenda/_03152010-79?html=true</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Building and Standards Meeting Documents</div>
+
+                <div class="agenda-url"><a href="/AgendaCenter/ViewFile/Agenda/_01272010-78?html=true" target="_blank">Relative URL: /AgendaCenter/ViewFile/Agenda/_01272010-78?html=true</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">City Council Meeting Agenda/Minutes/Video for 01/27/2014.</div>
+
+                <div class="agenda-url"><a href="/AgendaCenter/ViewFile/Agenda/_01272014-128" target="_blank">Relative URL: /AgendaCenter/ViewFile/Agenda/_01272014-128</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Agenda</div>
+
+                <div class="agenda-url"><a href="/AgendaCenter/ViewFile/Agenda/_01272014-128" target="_blank">Relative URL: /AgendaCenter/ViewFile/Agenda/_01272014-128</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">City Council Meeting Agenda/Minutes/Video for 01/13/2014.</div>
+
+                <div class="agenda-url"><a href="/AgendaCenter/ViewFile/Agenda/_01132014-129" target="_blank">Relative URL: /AgendaCenter/ViewFile/Agenda/_01132014-129</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Agenda</div>
+
+                <div class="agenda-url"><a href="/AgendaCenter/ViewFile/Agenda/_01132014-129" target="_blank">Relative URL: /AgendaCenter/ViewFile/Agenda/_01132014-129</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Historic Committee Agenda 8/15/2014</div>
+
+                <div class="agenda-url"><a href="/AgendaCenter/ViewFile/Agenda/_08152014-170" target="_blank">Relative URL: /AgendaCenter/ViewFile/Agenda/_08152014-170</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Agenda</div>
+
+                <div class="agenda-url"><a href="/AgendaCenter/ViewFile/Agenda/_08152014-170" target="_blank">Relative URL: /AgendaCenter/ViewFile/Agenda/_08152014-170</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Historic Committee Meeting Agenda 7/11/14</div>
+
+                <div class="agenda-url"><a href="/AgendaCenter/ViewFile/Agenda/_07112014-167" target="_blank">Relative URL: /AgendaCenter/ViewFile/Agenda/_07112014-167</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Agenda</div>
+
+                <div class="agenda-url"><a href="/AgendaCenter/ViewFile/Agenda/_07112014-167" target="_blank">Relative URL: /AgendaCenter/ViewFile/Agenda/_07112014-167</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Historic Committee Meeting Agenda for June 16th, 2014.</div>
+
+                <div class="agenda-url"><a href="/AgendaCenter/ViewFile/Agenda/_06162014-165" target="_blank">Relative URL: /AgendaCenter/ViewFile/Agenda/_06162014-165</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Agenda</div>
+
+                <div class="agenda-url"><a href="/AgendaCenter/ViewFile/Agenda/_06162014-165" target="_blank">Relative URL: /AgendaCenter/ViewFile/Agenda/_06162014-165</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Historical Committee Meeting Agenda for Friday, June 13th, 2014</div>
+
+                <div class="agenda-url"><a href="/AgendaCenter/ViewFile/Agenda/_06132014-164" target="_blank">Relative URL: /AgendaCenter/ViewFile/Agenda/_06132014-164</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Agenda</div>
+
+                <div class="agenda-url"><a href="/AgendaCenter/ViewFile/Agenda/_06132014-164" target="_blank">Relative URL: /AgendaCenter/ViewFile/Agenda/_06132014-164</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Historical Committee Meeting, Friday, April 11th, 2014.</div>
+
+                <div class="agenda-url"><a href="/AgendaCenter/ViewFile/Agenda/_04112014-161" target="_blank">Relative URL: /AgendaCenter/ViewFile/Agenda/_04112014-161</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Agenda</div>
+
+                <div class="agenda-url"><a href="/AgendaCenter/ViewFile/Agenda/_04112014-161" target="_blank">Relative URL: /AgendaCenter/ViewFile/Agenda/_04112014-161</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Agenda 2/24/14</div>
+
+                <div class="agenda-url"><a href="/AgendaCenter/ViewFile/Agenda/_02242014-125" target="_blank">Relative URL: /AgendaCenter/ViewFile/Agenda/_02242014-125</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Agenda</div>
+
+                <div class="agenda-url"><a href="/AgendaCenter/ViewFile/Agenda/_02242014-125" target="_blank">Relative URL: /AgendaCenter/ViewFile/Agenda/_02242014-125</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Planning and Zoning Commission Meeting Agenda Packet</div>
+
+                <div class="agenda-url"><a href="/AgendaCenter/ViewFile/Agenda/_02012021-229?html=true" target="_blank">Relative URL: /AgendaCenter/ViewFile/Agenda/_02012021-229?html=true</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">TIRZ 1 Agenda 10 June 2015</div>
+
+                <div class="agenda-url"><a href="/AgendaCenter/ViewFile/Agenda/_06102015-180" target="_blank">Relative URL: /AgendaCenter/ViewFile/Agenda/_06102015-180</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Agenda</div>
+
+                <div class="agenda-url"><a href="/AgendaCenter/ViewFile/Agenda/_06102015-180" target="_blank">Relative URL: /AgendaCenter/ViewFile/Agenda/_06102015-180</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">TIRZ #2 Agenda 10 June 2015 with Grim Examples</div>
+
+                <div class="agenda-url"><a href="/AgendaCenter/ViewFile/Agenda/_06102015-182" target="_blank">Relative URL: /AgendaCenter/ViewFile/Agenda/_06102015-182</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Agenda</div>
+
+                <div class="agenda-url"><a href="/AgendaCenter/ViewFile/Agenda/_06102015-182" target="_blank">Relative URL: /AgendaCenter/ViewFile/Agenda/_06102015-182</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">ZBA Agenda 1-16-18</div>
+
+                <div class="agenda-url"><a href="/AgendaCenter/ViewFile/Agenda/_01162018-222" target="_blank">Relative URL: /AgendaCenter/ViewFile/Agenda/_01162018-222</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Agenda</div>
+
+                <div class="agenda-url"><a href="/AgendaCenter/ViewFile/Agenda/_01162018-222" target="_blank">Relative URL: /AgendaCenter/ViewFile/Agenda/_01162018-222</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">Agenda& Minutes</div>
+
+                <div class="agenda-url"><a href="https://texarkanatx.portal.civicclerk.com/" target="_blank">https://texarkanatx.portal.civicclerk.com/</a></div>
+
+            </div>
+
+            <div class="agenda-item">
+                <div class="agenda-text">City Meeting Videos and Agendas</div>
+
+                <div class="agenda-url"><a href="https://texarkanatx.portal.civicclerk.com/" target="_blank">https://texarkanatx.portal.civicclerk.com/</a></div>
+
+            </div>
+
+        </div>
+
+    </main>
+    
+    <footer>
+        <p>Liberty Ledger Media | Automated Government Transparency Monitoring</p>
+        <p>Monitoring since February 2026</p>
+    </footer>
+</body>
+</html>
